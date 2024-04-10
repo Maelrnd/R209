@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>essaie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h3>MAËL RENAUD</h3>
+		<hr>
+    </header>
+    <main>
+        <section id="text">
+            <h1>Hello,</h1>
+			<h1>Je suis photographe d'art,</h1>
+			<h1 class="vert">créative & engagée.</h1>
+			<p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis augue magna. Fusce fringilla purus et sapien euismod ullamcoper. In lorem tellus, solicitudin in feugiat sed, sodales vel leo.</p>
+        </section>
+		<section id="photo">
+			<div class="bou">
+				<FORM>
+					<INPUT class="btn" Type=button VALUE="NATURE" onClick="document.location.href='Terre.html'">
+					<INPUT id="vert2" class="btn" Type=button VALUE="PORTRAIT" onClick="document.location.href='Lune.html'">
+					<INPUT class="btn" Type=button VALUE="ART" onClick="document.location.href='Systeme.html'">
+					<INPUT class="btn" Type=button VALUE="URBAIN" onClick="document.location.href='Systeme.html'">
+					<INPUT class="btn" Type=button VALUE="ANIMAUX" onClick="document.location.href='Systeme.html'">
+				</FORM>
+			</div>
+			<div class="image" id="image-container">
+				<script>
+					function getRandomNumber(min, max) {
+					return Math.floor(Math.random() * (max - min + 1)) + min;
+					}
+					function getRandomImageURL() {
+					const width = 200; 
+					const height = 150; 
+					const randomSeed = getRandomNumber(1, 1000); 
+					return `https://picsum.photos/seed/${randomSeed}/${width}/${height}`;
+					}
+					function addRandomImage() {
+					const imageContainer = document.getElementById('image-container');
+					const imageURL = getRandomImageURL();
+					const img = document.createElement('img');
+					img.src = imageURL;
+					imageContainer.appendChild(img);
+					}
+					for (let i = 0; i < 15; i++) {
+					addRandomImage();
+					}
+				</script>
+			</div>
+        </section>
+    </main>
+    <footer>
+        <p>@2024 MAËL RENAUD</p> 
+    </footer>
+</body>
+</html>
