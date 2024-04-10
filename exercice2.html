@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styleEX2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EX2</title>
 </head>
+
 <body>
     <header>
         <h1>Formulaire de contact</h1>
@@ -13,23 +15,22 @@
     <main>
         <form>
             <label for="pseudo">Votre Pseudo: *</label>
-            <input type="text" id="pseudo" name="pseudo "placeholder="Entrez votre pseudo" required>
+            <input type="text" id="pseudo" name="pseudo" placeholder="Entrez votre pseudo" required>
             <label for="MBP">Votre Mot de passe:*</label>
             <input type="password" id="MBP" name="MBP" placeholder="Entrez Votre Mot de passe" required>
             <label for="mail">Votre e-mail: *</label>
             <input type="text" id="mail" name="mail" placeholder="Entrez votre pseudo" required>
             <label for="message">Objet du message: *</label>
-            <select id="city" placeholder="Entrez votre pseudo" required>
-                <option>feur</option>
-                <option>caca</option>
-                <option>bababoy</option>
-                <option>pipi</option>
-                <option>prout</option>
+            <select id="option" required>
+                <option value="" disabled selected hidden>Please select an option</option>
+                <option value="1">feur</option>
+                <option value="2">caca</option>
+                <option value="3">bababoy</option>
+                <option value="4">pipi</option>
+                <option value="5">prout</option>
             </select>
-            <label for="tex">Votre message: *</label>
-            <textarea  id="tex" name="tex" rows="5" cols="33" required>
-votre texte...   
-            </textarea>
+            <label for="message">Votre message: *</label>
+            <textarea id="message" name="message">caca</textarea>
             <fieldset id="niv">
                 <legend>Niveau d'urgence: *:</legend>
 
@@ -50,12 +51,14 @@ votre texte...
             </fieldset>
             <fieldset id="poli">
                 <div>
-                  <input type="checkbox" id="scales" name="scales" checked />
-                  <label for="scales">J'ai lu et j'accepte la <a href=feur.mp4> politique de confidentialité</a> du site.</label>
+                    <input type="checkbox" id="scales" name="scales" checked />
+                    <label for="scales">J'ai lu et j'accepte la <a href=feur.mp4> politique de confidentialité</a> du
+                        site.</label>
                 </div>
             </fieldset>
             <button type="submit">Envoyer</button>
         </form>
     </main>
 </body>
+
 </html>
