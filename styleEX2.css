@@ -5,28 +5,44 @@ h1 {
     color: white;
     text-align: center;
 }
-main {
+form {
     background-color: white;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: "pseu mbp mail messa tex urgent";
+    display:flex ;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 2%;
 }
-#Pseudo {
-    grid-area: pseu;
+input{
+    
+   
+    padding:2%;
 }
-#MBP {
-    grid-area: mbp;
+#niv{
+    border: none;
+    outline: none;
+    
+    display:flex ;
+    
 }
-#mail {
-    grid-area: mail;
+#niv div{
+    padding-left: 20%;
+    
 }
-#message {
-    grid-area: messa;
+#poli{
+    border: none;
+    outline: none;
+    
+    text-align: center;
 }
-#tex {
-    grid-area: tex;
-}
-#niv {
-    grid-area: urgent;
+button{
+    margin-left: 43%;
+    margin-right: 43%;
+    padding-bottom: 2px;
+    background-color:blue;
+    color:white;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin-bottom: 2%;
 }

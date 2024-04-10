@@ -11,18 +11,20 @@
         <h1>Formulaire de contact</h1>
     </header>
     <main>
-        <form id="weatherForm">
-            <label for="Pseudo">Votre Pseudo: *</label>
-            <input type="text" id="Pseudo" placeholder="Entrez votre pseudo" required>
+        <form>
+            <label for="pseudo">Votre Pseudo: *</label>
+            <input type="text" id="pseudo" name="pseudo "placeholder="Entrez votre pseudo" required>
             <label for="MBP">Votre Mot de passe:*</label>
-            <input type="text" id="MBP" placeholder="Entrez Votre Mot de passe" required>
+            <input type="password" id="MBP" name="MBP" placeholder="Entrez Votre Mot de passe" required>
             <label for="mail">Votre e-mail: *</label>
-            <input type="text" id="mail" placeholder="Entrez votre pseudo" required>
+            <input type="text" id="mail" name="mail" placeholder="Entrez votre pseudo" required>
             <label for="message">Objet du message: *</label>
-            <input type="text" id="message" placeholder="Entrez Votre Mot de passe" required>
+            <select id="city" placeholder="Entrez votre pseudo" required>
+                <option>feur</option>
+            </select>
             <label for="tex">Votre message: *</label>
-            <textarea  id="tex" rows="5" cols="33" required>
-votre text   
+            <textarea  id="tex" name="tex" rows="5" cols="33" required>
+votre texte...   
             </textarea>
             <fieldset id="niv">
                 <legend>Niveau d'urgence: *:</legend>
@@ -43,11 +45,9 @@ votre text
                 </div>
             </fieldset>
             <fieldset id="poli">
-                <legend>Choose your monster's features:</legend>
-              
                 <div>
                   <input type="checkbox" id="scales" name="scales" checked />
-                  <label for="scales">J'ai lu et j'accepte la<a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ> politique de confidentialité</a> du site.</label>
+                  <label for="scales">J'ai lu et j'accepte la<a href=feur.mp4> politique de confidentialité</a> du site.</label>
                 </div>
             </fieldset>
             <button type="submit">Envoyer</button>
