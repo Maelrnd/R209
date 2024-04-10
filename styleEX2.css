@@ -14,14 +14,11 @@ form {
     padding: 2%;
 }
 input{
-    
-   
     padding:2%;
 }
 #niv{
     border: none;
     outline: none;
-    
     display:flex ;
     
 }
@@ -45,4 +42,18 @@ button{
     outline: none;
     border-radius: 2px;
     margin-bottom: 2%;
+}
+@media screen and (max-width: 384px) and (max-height: 854px) {
+    #niv div{
+        padding-left: 10%;
+    }
+    form {
+        margin-right: 0%;
+        margin-left: 0%;
+        padding: 2%;
+    }
+    body{
+        margin-right: 0%;
+        margin-left: 0%;
+    }
 }
