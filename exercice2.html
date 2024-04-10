@@ -2,10 +2,56 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleEX2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EX2</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Formulaire de contact</h1>
+    </header>
+    <main>
+        <form id="weatherForm">
+            <label for="Pseudo">Votre Pseudo: *</label>
+            <input type="text" id="Pseudo" placeholder="Entrez votre pseudo" required>
+            <label for="MBP">Votre Mot de passe:*</label>
+            <input type="text" id="MBP" placeholder="Entrez Votre Mot de passe" required>
+            <label for="mail">Votre e-mail: *</label>
+            <input type="text" id="mail" placeholder="Entrez votre pseudo" required>
+            <label for="message">Objet du message: *</label>
+            <input type="text" id="message" placeholder="Entrez Votre Mot de passe" required>
+            <label for="tex">Votre message: *</label>
+            <textarea  id="tex" rows="5" cols="33" required>
+votre text   
+            </textarea>
+            <fieldset id="niv">
+                <legend>Niveau d'urgence: *:</legend>
+
+                <div>
+                    <input type="radio" id="urgence" name="drone" value="urgence" checked />
+                    <label for="urgence">urgent</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="normal" name="drone" value="normal" />
+                    <label for="normal">normal</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="lent" name="drone" value="lent" />
+                    <label for="lent">lent</label>
+                </div>
+            </fieldset>
+            <fieldset id="poli">
+                <legend>Choose your monster's features:</legend>
+              
+                <div>
+                  <input type="checkbox" id="scales" name="scales" checked />
+                  <label for="scales">J'ai lu et j'accepte la<a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ> politique de confidentialité</a> du site.</label>
+                </div>
+            </fieldset>
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
 </body>
 </html>
