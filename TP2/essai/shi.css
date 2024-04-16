@@ -1,0 +1,9 @@
+bouton{
+    color:blue;
+    display: flex;
+    align-items: center;
+}
+
+bouton:hover{
+
+}
